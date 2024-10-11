@@ -1,0 +1,10 @@
+C:\Users\UT01463\Desktop\Codereview\MovieRentalManagementSystem_V2\obj\Debug\MovieRentalManagementSystem_V2.csproj.AssemblyReference.cache
+C:\Users\UT01463\Desktop\Codereview\MovieRentalManagementSystem_V2\obj\Debug\MovieRentalManagementSystem_V2.csproj.CoreCompileInputs.cache
+C:\Users\UT01463\Desktop\Codereview\MovieRentalManagementSystem_V2\bin\Debug\MovieRentalManagementSystem_V2.exe.config
+C:\Users\UT01463\Desktop\Codereview\MovieRentalManagementSystem_V2\bin\Debug\MovieRentalManagementSystem_V2.exe
+C:\Users\UT01463\Desktop\Codereview\MovieRentalManagementSystem_V2\bin\Debug\MovieRentalManagementSystem_V2.pdb
+C:\Users\UT01463\Desktop\Codereview\MovieRentalManagementSystem_V2\bin\Debug\System.Data.SqlClient.dll
+C:\Users\UT01463\Desktop\Codereview\MovieRentalManagementSystem_V2\bin\Debug\System.Data.SqlClient.xml
+C:\Users\UT01463\Desktop\Codereview\MovieRentalManagementSystem_V2\obj\Debug\MovieRen.216BB4CF.Up2Date
+C:\Users\UT01463\Desktop\Codereview\MovieRentalManagementSystem_V2\obj\Debug\MovieRentalManagementSystem_V2.exe
+C:\Users\UT01463\Desktop\Codereview\MovieRentalManagementSystem_V2\obj\Debug\MovieRentalManagementSystem_V2.pdb

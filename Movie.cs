@@ -13,5 +13,24 @@ namespace MovieRentalManagementSystem_V2
         public string Director { get; set; }
         public decimal RentalPrice { get; set; }
 
+        public Movie()
+        {
+
+        }
+        public Movie( string title, string director, decimal rentalPrice)
+        {
+            
+            Title = title;
+            Director = director;
+            RentalPrice = rentalPrice;
+        }
+        public Movie(string movieId, string title, string director, decimal rentalPrice)
+        {
+            MovieId = movieId;
+            Title = title;
+            Director = director;
+            RentalPrice = rentalPrice;
+        }
     }
+
 }

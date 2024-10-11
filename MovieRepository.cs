@@ -10,6 +10,7 @@ namespace MovieRentalManagementSystem_V2
     internal class MovieRepository
     {
         private readonly string connectionstring = "Server=(localdb)\\MSSQLLocalDB;database=MovieRentalManagement;Integrated Security=true";
+        static int id = 0;
         public void AddMovie(Movie movie)
         {
             try
@@ -19,12 +20,14 @@ namespace MovieRentalManagementSystem_V2
                     conn.Open();
                     var cmd = conn.CreateCommand();
                     cmd.CommandText = @"insert into Movies (MovieId,Title,Director,RentalPrice)values(@MovieId,@Title,@Director,@RentalPrice)";
-                    cmd.Parameters.AddWithValue("@MovieId", movie.MovieId);
-                    cmd.Parameters.AddWithValue("@Title", movie.Title);
+                    cmd.Parameters.AddWithValue("@MovieId", $"{id}");
+                    cmd.Parameters.AddWithValue("@Title", CapitalizeTitle(movie.Title));
                     cmd.Parameters.AddWithValue("@Director", movie.Director);
                     cmd.Parameters.AddWithValue("@RentalPrice", movie.RentalPrice);
                     cmd.ExecuteNonQuery();
                 }
+                Console.WriteLine("Movie Added successfully");
+                id++;
             }
             catch (SqlException ex)
             {
@@ -60,7 +63,7 @@ namespace MovieRentalManagementSystem_V2
                                     Director = reader.GetString(2),
                                     RentalPrice = reader.GetDecimal(3),
                                 };
-                                Console.WriteLine(mov);
+                                Console.WriteLine($"Id : {mov.MovieId} Title {mov.Title} Director : {mov.Director} price : {mov.RentalPrice}");
                             }
                             Console.ReadLine();    
              
@@ -93,16 +96,14 @@ namespace MovieRentalManagementSystem_V2
                     {
                         if (reader.Read())
                         {
-                               var mov = new Movie
-                                {
-                                    MovieId = reader.GetString(0),
-                                    Title = reader.GetString(1),
-                                    Director = reader.GetString(2),
-                                    RentalPrice = reader.GetDecimal(3),
-                                };
-                                Console.WriteLine(mov);
-                              
-
+                            var mov = new Movie
+                            {
+                                MovieId = reader.GetString(0),
+                                Title = reader.GetString(1),
+                                Director = reader.GetString(2),
+                                RentalPrice = reader.GetDecimal(3),
+                            };
+                            Console.WriteLine($"Id : {mov.MovieId} Title {mov.Title} Director : {mov.Director} price : {mov.RentalPrice}");
                         }
                         else
                         {
@@ -136,7 +137,9 @@ namespace MovieRentalManagementSystem_V2
                     cmd.Parameters.AddWithValue("@Director", movie.Director);
                     cmd.Parameters.AddWithValue("@RentalPrice", movie.RentalPrice);
                     cmd.ExecuteNonQuery();
+
                 }
+                Console.WriteLine("Movie updated successfully");
             }
             catch (SqlException ex)
             {
@@ -161,6 +164,7 @@ namespace MovieRentalManagementSystem_V2
                     
                     cmd.ExecuteNonQuery();
                 }
+                Console.WriteLine("Movie deleted successfully");
             }
             catch (SqlException ex)
             {
@@ -170,6 +174,17 @@ namespace MovieRentalManagementSystem_V2
             {
                 Console.WriteLine(ex.Message);
             }
+        }
+
+        public string CapitalizeTitle(string title) 
+        { 
+         var words = title.Split(' ');
+            var ret = "";
+            foreach (var word in words) 
+            {
+                ret += char.ToUpper(word[0]) + word.Substring(1) + " ";
+            }
+            return ret;
         }
     }
 }
