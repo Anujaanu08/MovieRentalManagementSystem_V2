@@ -31,14 +31,16 @@ namespace MovieRentalManagementSystem_V2
                 switch (opt)
                 {
                     case 1:
-                                  Console.Write("Enter Movie Title: ");
+                        Console.Write("Enter Movie Id: ");
+                        string id = Console.ReadLine();
+                        Console.Write("Enter Movie Title: ");
                         string title = Console.ReadLine();
                         Console.Write("Enter Movie Director: ");
                         string director = Console.ReadLine();
                         Console.Write("Enter Movie rental price: ");
                         int price = int.Parse(Console.ReadLine());
                         
-                        repository.AddMovie(new Movie(title,director,price));
+                        repository.AddMovie(new Movie(id,title,director,price));
                         Console.ReadLine();
                         break;
                     case 2:

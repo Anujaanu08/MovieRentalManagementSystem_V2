@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\UT01463\\Desktop\\Codereview\\MovieRentalManagementSystem_V2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF3DEA30-BDB5-4B36-B7BE-2D5A57714CE4}|MovieRentalManagementSystem_V2.csproj|C:\\Users\\UT01463\\Desktop\\Codereview\\MovieRentalManagementSystem_V2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF3DEA30-BDB5-4B36-B7BE-2D5A57714CE4}|MovieRentalManagementSystem_V2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DF3DEA30-BDB5-4B36-B7BE-2D5A57714CE4}|MovieRentalManagementSystem_V2.csproj|C:\\Users\\UT01463\\Desktop\\Codereview\\MovieRentalManagementSystem_V2\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF3DEA30-BDB5-4B36-B7BE-2D5A57714CE4}|MovieRentalManagementSystem_V2.csproj|solutionrelative:movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF3DEA30-BDB5-4B36-B7BE-2D5A57714CE4}|MovieRentalManagementSystem_V2.csproj|c:\\users\\ut01463\\desktop\\codereview\\movierentalmanagementsystem_v2\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF3DEA30-BDB5-4B36-B7BE-2D5A57714CE4}|MovieRentalManagementSystem_V2.csproj|solutionrelative:movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DF3DEA30-BDB5-4B36-B7BE-2D5A57714CE4}|MovieRentalManagementSystem_V2.csproj|c:\\users\\ut01463\\desktop\\codereview\\movierentalmanagementsystem_v2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF3DEA30-BDB5-4B36-B7BE-2D5A57714CE4}|MovieRentalManagementSystem_V2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF3DEA30-BDB5-4B36-B7BE-2D5A57714CE4}|MovieRentalManagementSystem_V2.csproj|C:\\Users\\UT01463\\Desktop\\Codereview\\MovieRentalManagementSystem_V2\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -40,26 +40,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MovieRepository.cs",
               "DocumentMoniker": "C:\\Users\\UT01463\\Desktop\\Codereview\\MovieRentalManagementSystem_V2\\MovieRepository.cs",
               "RelativeDocumentMoniker": "MovieRepository.cs",
               "ToolTip": "C:\\Users\\UT01463\\Desktop\\Codereview\\MovieRentalManagementSystem_V2\\MovieRepository.cs",
               "RelativeToolTip": "MovieRepository.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAADwvyQAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T06:27:19.155Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\UT01463\\Desktop\\Codereview\\MovieRentalManagementSystem_V2\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\UT01463\\Desktop\\Codereview\\MovieRentalManagementSystem_V2\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAeAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAiwC0AAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T05:38:40.399Z",
               "EditorCaption": ""

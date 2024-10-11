@@ -10,7 +10,7 @@ namespace MovieRentalManagementSystem_V2
     internal class MovieRepository
     {
         private readonly string connectionstring = "Server=(localdb)\\MSSQLLocalDB;database=MovieRentalManagement;Integrated Security=true";
-        static int id = 0;
+       
         public void AddMovie(Movie movie)
         {
             try
@@ -20,14 +20,14 @@ namespace MovieRentalManagementSystem_V2
                     conn.Open();
                     var cmd = conn.CreateCommand();
                     cmd.CommandText = @"insert into Movies (MovieId,Title,Director,RentalPrice)values(@MovieId,@Title,@Director,@RentalPrice)";
-                    cmd.Parameters.AddWithValue("@MovieId", $"{id}");
+                    cmd.Parameters.AddWithValue("@MovieId", movie.MovieId);
                     cmd.Parameters.AddWithValue("@Title", CapitalizeTitle(movie.Title));
                     cmd.Parameters.AddWithValue("@Director", movie.Director);
                     cmd.Parameters.AddWithValue("@RentalPrice", movie.RentalPrice);
                     cmd.ExecuteNonQuery();
                 }
                 Console.WriteLine("Movie Added successfully");
-                id++;
+                
             }
             catch (SqlException ex)
             {
@@ -133,13 +133,14 @@ namespace MovieRentalManagementSystem_V2
                     var cmd = conn.CreateCommand();
                     cmd.CommandText = @"update Movies set Title=@Title,Director=@Director,RentalPrice=@RentalPrice where MovieId=@MovieId";
                     cmd.Parameters.AddWithValue("@MovieId", movie.MovieId);
-                    cmd.Parameters.AddWithValue("@Title", movie.Title);
+                    cmd.Parameters.AddWithValue("@Title", CapitalizeTitle(movie.Title) );
                     cmd.Parameters.AddWithValue("@Director", movie.Director);
                     cmd.Parameters.AddWithValue("@RentalPrice", movie.RentalPrice);
                     cmd.ExecuteNonQuery();
 
                 }
                 Console.WriteLine("Movie updated successfully");
+                Console.ReadLine();
             }
             catch (SqlException ex)
             {
@@ -165,6 +166,7 @@ namespace MovieRentalManagementSystem_V2
                     cmd.ExecuteNonQuery();
                 }
                 Console.WriteLine("Movie deleted successfully");
+                Console.ReadLine();
             }
             catch (SqlException ex)
             {
